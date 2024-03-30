@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: Analogist;
+    src: url(font/Analogist.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: Analogist;
+    height: 900vh;
+    
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5px; /* Spazio tra le linee */
+}
+
+.hamburger-menu .hamburger:nth-child(2) {
+    width: 50%;
+    float: right;
+}
+
+nav{
+    min-height: 6vh;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;    
+    
+}
+
+nav .Logo{
+    width: 14%;
+    height: 100%;
+   
+}
+
+nav .Logo img{
+    width: 100%;
+    height: 100%;
+    min-height: 6vh;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.container_link_menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+}
+
+.container_link_menu li{
+    margin: 0 25px;
+    transition: .2s all;
+}
+
+.container_link_menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+   
+}
+.container_link_menu li a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+   
+}
+
+.container_link_menu li:hover{
+    transform: scale(1.05);
+
+}
+
+
+.Contenitore_Banner{
+    min-height: 100vh;  
+    height: 110vh;
+    position: relative;
+}
+
+.Contenitore_Video{
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0; /* Impostazione iniziale dell'opacità a 0 */
+    transition: opacity 4s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(0.8);
+    
+}
+
+
+
+.Contenitore_Video h1{
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 13vw;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 4px 5px 3px #000000;
+    
+}
+
+.titolo{
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    padding: 3rem 0;
+    border: 2px solid black;
+    border-left:none;
+    border-right: none;
+}
+
+.Contenitore{
+    min-height: 300px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;   
+    
+}
+
+.Contenitore-2{
+    min-height: 300px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.Contenitore-3{
+    min-height: 300px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;   
+}
+
+.Contenitore-4{
+    min-height: 300px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+
+.Parte_Sinistra {
+    width: 50%;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+  
+   
+}
+
+.Parte_Sinistra-2{
+    width: 50%;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
+.Parte_Sinistra-3{
+    width: 50%;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.Parte_Sinistra-4{
+    width: 50%;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
+.Parte_Sinistra h1{
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.Parte_Sinistra-2 h1{
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.Parte_Sinistra-3 h1{
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+
+.Parte_Sinistra-4 h1{
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+
+.Parte_Sinistra p{  
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.4vw;
+    font-family: "Lora", serif;
+    padding: 1rem;
+}
+
+
+.Parte_Sinistra-2 p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.4vw;
+    font-family: "Lora", serif;
+    padding: 1rem;
+}
+
+
+
+.Parte_Sinistra-3 p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.4vw;
+    font-family: "Lora", serif;
+    padding: 1rem;
+}
+
+.Parte_Sinistra-4 p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.4vw;
+    font-family: "Lora", serif;
+    padding: 1rem;
+}
+
+
+
+.Parte_Destra{
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+
+.Parte_Destra-2{
+    width: 50%;
+    height: 100%;
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+
+.Parte_Destra-3{
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+
+.Parte_Destra-4{
+    width: 50%;
+    height: 100%;
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+
+.Parte_Destra img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Parte_Destra-2 img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Parte_Destra-3 img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Parte_Destra-4 img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img{
+    transition: 0.5s all ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.02);
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .Contenitore_Video h1{
+        font-size: 15vw;
+    }
+
+    .Parte_Sinistra h1,
+    .Parte_Sinistra-2 h1,
+    .Parte_Sinistra-3 h1,
+    .Parte_Sinistra-4 h1{
+        font-size: 5vw;
+    }
+
+    .Parte_Sinistra p,
+    .Parte_Sinistra-2 p,
+    .Parte_Sinistra-3 p,
+    .Parte_Sinistra-4 p{
+        font-size: 2vw;
+        line-height: 2.3vw;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .Contenitore_Banner{
+        height: 100vh;
+    }
+
+    .Contenitore_Video{
+        height: 100vh;
+    }
+
+    .Contenitore_Video h1{
+        font-size: 18vw;
+    }
+
+    .Contenitore,
+    .Contenitore-2,
+    .Contenitore-3,
+    .Contenitore-4{
+        height: 500px;
+    }
+
+    .Parte_Sinistra h1,
+    .Parte_Sinistra-2 h1,
+    .Parte_Sinistra-3 h1,
+    .Parte_Sinistra-4 h1{
+        font-size: 5vw;
+    }
+
+    .Parte_Sinistra p,
+    .Parte_Sinistra-2 p,
+    .Parte_Sinistra-3 p,
+    .Parte_Sinistra-4 p{
+        font-size: 2vw;
+        line-height: 2.3vw;
+        padding-top: 0.2rem;
+    }
+
+    .container_link_menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .container_link_menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* or whatever the height of your nav bar is */
+        right: 0;
+        background-color: #fff; /* Optional: background color for mobile menu */
+        padding: 10px; /* Optional: padding for mobile menu */
+        border: 1px solid #333; /* Optional: border for mobile menu */
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Contenitore_Video h1{
+        font-size: 21vw;
+    }
+
+    .titolo{
+        font-size: 30px;
+    }
+
+    .Contenitore,
+    .Contenitore-2,
+    .Contenitore-3,
+    .Contenitore-4{
+        height: 400px;
+    }
+
+    .Parte_Sinistra h1,
+    .Parte_Sinistra-2 h1,    
+    .Parte_Sinistra-3 h1,
+    .Parte_Sinistra-4 h1{
+        font-size: 4.5vw;
+    }
+
+
+
+    .Parte_Sinistra p,
+    .Parte_Sinistra-2 p,
+    .Parte_Sinistra-3 p,
+    .Parte_Sinistra-4 p{
+        padding-top: 0;
+        font-size: 2.8vw;
+        line-height: 3.5vw; 
+    }
+
+
+
+
+}
