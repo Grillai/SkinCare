@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-@font-face {
-    font-family: Analogist;
-    src: url(font/Analogist.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -21,8 +18,7 @@ html{
 
 
 body{
-    font-family: Analogist !important;
-    height: 900vh;
+    font-family: "Playfair Display", serif;
     
 }
 
@@ -142,7 +138,7 @@ nav .Logo img{
     text-align: center;
     letter-spacing: 1px;
     text-shadow: 4px 5px 3px #000000;
-    
+    font-weight: 600;
 }
 
 .titolo{
