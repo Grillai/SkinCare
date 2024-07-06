@@ -518,6 +518,7 @@ img:hover{
     align-items: center;
     height: 350px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 #moduloContatto h2{
@@ -606,6 +607,62 @@ form button:hover{
     background-color: white;
     color: black;
     border: 1px solid black;    
+}
+
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links{
+    height: auto;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
 }
 
 @keyframes infiniteScroll {
@@ -736,6 +793,12 @@ form button:hover{
         letter-spacing: 3px;
         text-align: center;
         margin-top: 30px;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+
     }
 }
 
